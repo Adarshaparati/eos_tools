@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "Utils1",
+    "pageId": "EOS Management",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "objective",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "EOS Management_Utils1",
+  "deleted": false,
+  "gitSyncId": "64abaf6c5b74fd62c2bf334e_64ad4c30fd2ee65af306b6ea"
+}

@@ -1,0 +1,143 @@
+{
+  "unpublishedPage": {
+    "name": "EOS Management",
+    "slug": "eos-management",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 650,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "EOS Management_fetchEmployee",
+              "name": "fetchEmployee",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "EOS Management_fetch_emp_by_level",
+              "name": "fetch_emp_by_level",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.user.email"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "EOS Management_fetchOKR",
+              "name": "fetchOKR",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.company"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "EOS Management_fetchObjective",
+              "name": "fetchObjective",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.company"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "EOS Management_fetchkpiall",
+              "name": "fetchkpiall",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.company"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "EOS Management_fetchOKR_to_create_KPI",
+              "name": "fetchOKR_to_create_KPI",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Input_Str_Obj.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "EOS Management_fetchTeam",
+              "name": "fetchTeam",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.company"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "EOS Management_get_team_by_okr",
+              "name": "get_team_by_okr",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Inp_Key_Res.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "EOS Management_Get_Emp_By_TeamValue_2",
+              "name": "Get_Emp_By_TeamValue_2",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "fetchTeam.data.find(team => team.team_name === Table1.triggeredRow.team_id)?.team_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "EOS Management",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "64abaf6c5b74fd62c2bf334e_64abaf6c5b74fd62c2bf3350"
+}

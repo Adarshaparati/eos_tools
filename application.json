@@ -1,0 +1,63 @@
+{
+  "pages": [
+    {
+      "id": "login",
+      "isDefault": true
+    },
+    {
+      "id": "welcome",
+      "isDefault": false
+    },
+    {
+      "id": "EOS Management",
+      "isDefault": false
+    },
+    {
+      "id": "Team Management",
+      "isDefault": false
+    },
+    {
+      "id": "KPI Monitoring",
+      "isDefault": false
+    },
+    {
+      "id": "DashBoard",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "unpublishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": false,
+      "orientation": "side",
+      "navStyle": "sidebar",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "theme",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": true
+    }
+  },
+  "color": "#F1DEFF",
+  "icon": "bar-graph",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "Email_ https://smtpjs.com/v3/smtp.js"
+    }
+  ],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}

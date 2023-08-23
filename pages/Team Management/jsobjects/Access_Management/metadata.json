@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Access_Management",
+    "pageId": "Team Management",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Team Management_Access_Management",
+  "deleted": false,
+  "gitSyncId": "64abaf6c5b74fd62c2bf334e_64d0712bb940850dc4caedc5"
+}

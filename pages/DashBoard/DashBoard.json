@@ -1,0 +1,134 @@
+{
+  "unpublishedPage": {
+    "name": "DashBoard",
+    "slug": "dashboard",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 630,
+          "containerStyle": "none",
+          "snapRows": 60,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 83,
+          "minHeight": 620,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "DashBoard_fetch_KPI_Week_Task",
+              "name": "fetch_KPI_Week_Task",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.company"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "DashBoard_security.revert_back_to_login",
+              "name": "security.revert_back_to_login",
+              "collectionId": "DashBoard_security",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (appsmith.store.user === undefined) {\n    navigateTo('login');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "DashBoard_show_KPI_Monitor",
+              "name": "show_KPI_Monitor",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.company"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "DashBoard_fetchObjective",
+              "name": "fetchObjective",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.company"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "DashBoard_fetchTeam",
+              "name": "fetchTeam",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.company"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "DashBoard_Get_Team_By_TeamValue",
+              "name": "Get_Team_By_TeamValue",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Inp_Sel_Team.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "DashBoard_fetchOKR",
+              "name": "fetchOKR",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Inp_Obj.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "DashBoard_utils.weekly_ontrack_avg",
+              "name": "utils.weekly_ontrack_avg",
+              "collectionId": "DashBoard_utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await fetch_KPI_Week_Task.run();\n  let kwt = fetch_KPI_Week_Task.data;\n  if (Inp_Sel_Team.selectedOptionValue !== '') {\n    kwt = kwt.filter(k => k.team_id === Inp_Sel_Team.selectedOptionValue);\n  }\n  if (Select_Owner.selectedOptionValue !== '') {\n    kwt = kwt.filter(k => k.emp_id === Select_Owner.selectedOptionValue);\n  }\n  if (Inp_Obj.selectedOptionValue !== '') {\n    kwt = kwt.filter(k => k.kpi_obj_id === Inp_Obj.selectedOptionValue);\n  }\n  if (Inp_OKR.selectedOptionValue !== '') {\n    kwt = kwt.filter(k => k.kpi_kr_id === Inp_OKR.selectedOptionValue);\n  }\n  let count = 0;\n  let weeks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n  for (let i = 0; i < 13; i++) {\n    count = 0;\n    for (let j = 0; j < kwt.length; j++) {\n      if (kwt[j].weeks === \"Week \" + (i + 1).toString() && kwt[j].ontrack !== null) {\n        weeks[i] = weeks[i] + kwt[j].ontrack;\n        count++;\n      }\n    }\n    if (count !== 0) weeks[i] = weeks[i] / count;\n  }\n  return [{\n    \"x\": \"Week 1\",\n    \"y\": weeks[0]\n  }, {\n    \"x\": \"Week 2\",\n    \"y\": weeks[1]\n  }, {\n    \"x\": \"Week 3\",\n    \"y\": weeks[2]\n  }, {\n    \"x\": \"Week 4\",\n    \"y\": weeks[3]\n  }, {\n    \"x\": \"Week 5\",\n    \"y\": weeks[4]\n  }, {\n    \"x\": \"Week 6\",\n    \"y\": weeks[5]\n  }, {\n    \"x\": \"Week 7\",\n    \"y\": weeks[6]\n  }, {\n    \"x\": \"Week 8\",\n    \"y\": weeks[7]\n  }, {\n    \"x\": \"Week 9\",\n    \"y\": weeks[8]\n  }, {\n    \"x\": \"Week 10\",\n    \"y\": weeks[9]\n  }, {\n    \"x\": \"Week 11\",\n    \"y\": weeks[10]\n  }, {\n    \"x\": \"Week 12\",\n    \"y\": weeks[11]\n  }, {\n    \"x\": \"Week 13\",\n    \"y\": weeks[12]\n  }];\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "DashBoard",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "64abaf6c5b74fd62c2bf334e_64b64bcd6b2bd10dff9872ac"
+}

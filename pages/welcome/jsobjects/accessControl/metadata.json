@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "accessControl",
+    "pageId": "welcome",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "welcome_accessControl",
+  "deleted": false,
+  "gitSyncId": "64abaf6c5b74fd62c2bf334e_64d0ffd445d91670e8dc774b"
+}

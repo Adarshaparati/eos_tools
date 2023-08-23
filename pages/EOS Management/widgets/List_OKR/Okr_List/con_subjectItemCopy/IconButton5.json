@@ -1,0 +1,49 @@
+{
+    "boxShadow": "none",
+    "mobileBottomRow": 6,
+    "widgetName": "IconButton5",
+    "onClick": "{{OKR_util.setOKR(Okr_List.triggeredItem);\nshowModal('update_OKR_Modal');}}",
+    "buttonColor": "#002b41ff",
+    "dynamicPropertyPathList": [
+        {"key": "onClick"},
+        {"key": "isVisible"}
+    ],
+    "displayName": "Icon button",
+    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.80fc7466c0d7181ec0271de7fda795ec.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 3,
+    "bottomRow": 7,
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 53,
+    "animateLoading": true,
+    "parentColumnSpace": 1.319091796875,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "leftColumn": 53,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "isVisible"}
+    ],
+    "isDisabled": false,
+    "key": "p56ej0jxlb",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "iconName": "edit",
+    "dynamicHeight": "FIXED",
+    "widgetId": "qqwxmrrpoa",
+    "minWidth": 50,
+    "isVisible": "{{fetch_emp_by_level.data[0].lvl_id>3}}",
+    "version": 1,
+    "parentId": "2op0ieveqk",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 2,
+    "responsiveBehavior": "hug",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 49,
+    "buttonVariant": "PRIMARY"
+}

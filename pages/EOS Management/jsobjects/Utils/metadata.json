@@ -1,0 +1,32 @@
+{
+  "unpublishedCollection": {
+    "name": "Utils",
+    "pageId": "EOS Management",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "updatedObjectiveName",
+        "value": "''"
+      },
+      {
+        "name": "objective",
+        "value": "{}"
+      },
+      {
+        "name": "OKR",
+        "value": "{}"
+      },
+      {
+        "name": "updatedOKRname",
+        "value": "''"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "EOS Management_Utils",
+  "deleted": false,
+  "gitSyncId": "64abaf6c5b74fd62c2bf334e_64acc76e2cf58f0779edf2c6"
+}
