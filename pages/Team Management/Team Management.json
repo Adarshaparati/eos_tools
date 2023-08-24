@@ -28,18 +28,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Team Management_fetchTeam",
-              "name": "fetchTeam",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.company"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Team Management_Access_Management.fetchList",
               "name": "Access_Management.fetchList",
               "collectionId": "Team Management_Access_Management",
@@ -49,7 +37,31 @@
                 "async () => {\n  const accessLevels = [{\n    name: \"Level 1: View Access of only user's KPI data in KPI monitoring\",\n    code: 1\n  }, {\n    name: \"Level 2: Edit access of only user's KPI data in KPI Monitoring\",\n    code: 2\n  }, {\n    name: \"Level 3: View access of only teams's data in KPI monitoring and EOS management\",\n    code: 3\n  }, {\n    name: \"Level 4: Edit access of only team's data in KPI monitoring and EOS management\",\n    code: 4\n  }, {\n    name: \"Level 5: View access of all data\",\n    code: 5\n  }];\n  return accessLevels;\n}"
               ],
               "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Team Management_fetchTeam",
+              "name": "fetchTeam",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.company"
+              ],
+              "timeoutInMillisecond": 10000
             },
+            {
+              "id": "Team Management_get_Employee_By_Team",
+              "name": "get_Employee_By_Team",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "List_Team.selectedItem.team_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
             {
               "id": "Team Management_fetchEmployee",
               "name": "fetchEmployee",
@@ -69,16 +81,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "appsmith.store.user.email"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Team Management_get_Employee_By_Team",
-              "name": "get_Employee_By_Team",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "List_Team.selectedItem.team_id"
               ],
               "timeoutInMillisecond": 10000
             }
