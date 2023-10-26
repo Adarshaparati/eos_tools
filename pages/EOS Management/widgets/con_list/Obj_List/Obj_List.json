@@ -3,7 +3,7 @@
     "requiresFlatWidgetChildren": true,
     "isCanvas": true,
     "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-    "topRow": 8,
+    "topRow": 6,
     "pageSize": 4,
     "onPageChange": "",
     "type": "LIST_WIDGET_V2",
@@ -65,7 +65,7 @@
     "isLoading": false,
     "mainCanvasId": "mbt3ht7pz8",
     "borderRadius": "0.375rem",
-    "originalBottomRow": 57,
+    "originalBottomRow": 55,
     "additionalStaticProps": [
         "level",
         "levelData",
@@ -78,11 +78,11 @@
     "widgetName": "Obj_List",
     "listData": "{{fetchObjective.data}}",
     "dynamicPropertyPathList": [
-        {"key": "onItemClick"},
-        {"key": "isVisible"}
+        {"key": "isVisible"},
+        {"key": "onItemClick"}
     ],
     "displayName": "List",
-    "bottomRow": 57,
+    "bottomRow": 55,
     "parentRowSpace": 10,
     "hideCard": false,
     "templateBottomRow": 16,
@@ -102,12 +102,12 @@
     "rightColumn": 64,
     "widgetId": "b209m653v1",
     "minWidth": 450,
-    "onItemClick": "{{fetchOKR.run();\nfiltering.filter_OKR()\nfetchkpiall.run();\n}}",
+    "onItemClick": "{{fetchOKR.run();\nfiltering.filter_OKR();\nfetchkpiall.run();\nJSObject1.setCurrentButton();\n\n}}\n",
     "parentId": "dkebukxswr",
     "renderMode": "CANVAS",
     "mobileTopRow": 2,
     "responsiveBehavior": "fill",
-    "originalTopRow": 8,
+    "originalTopRow": 6,
     "mobileLeftColumn": 2,
     "selectedItemView": "{{{}}}"
 }

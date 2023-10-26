@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "colour",
+    "pageId": "Team Management",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Team Management_colour",
+  "deleted": false,
+  "gitSyncId": "64abaf6c5b74fd62c2bf334e_65051b80cf41f159292b9551"
+}

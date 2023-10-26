@@ -19,93 +19,23 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "version": 87,
           "minHeight": 630,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "KPI Monitoring_show_KPI_Monitor",
-              "name": "show_KPI_Monitor",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.company"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "KPI Monitoring_fetchKPI",
-              "name": "fetchKPI",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "KPI Monitoring_fetchTeam",
-              "name": "fetchTeam",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.company"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "KPI Monitoring_Select_KPI_Week_Task",
-              "name": "Select_KPI_Week_Task",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Table1.selectedRow.quarter",
-                "Table1.selectedRow.kpi_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "KPI Monitoring_fetch_emp_by_level",
-              "name": "fetch_emp_by_level",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.user.email"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "KPI Monitoring_GetKPI_From_Emp",
-              "name": "GetKPI_From_Emp",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Select_Owner.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "KPI Monitoring_Get_Team_By_TeamValue",
-              "name": "Get_Team_By_TeamValue",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Inp_Sel_Team.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
+        "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [
+          {
+            "code": "AE-CYC-4041",
+            "title": "CONFIGURATION_ERROR",
+            "message": "A cyclic dependency error has been encountered on current page, \nqueries on page load will not run. \n Please check debugger and Appsmith documentation for more information",
+            "errorType": "Cyclical dependency error encountered while parsing relationship [CircularProgress1.progress : CircularProgress1.progress] where the relationship is denoted as (source : target).",
+            "referenceDoc": "Cyclical Dependency in Page Load Actions"
+          }
         ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
+        "validOnPageLoadActions": false,
         "id": "KPI Monitoring",
         "deleted": false,
         "policies": [],

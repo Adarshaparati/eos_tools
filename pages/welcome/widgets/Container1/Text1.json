@@ -1,6 +1,7 @@
 {
     "mobileBottomRow": 18,
     "widgetName": "Text1",
+    "dynamicPropertyPathList": [{"key": "isVisible"}],
     "displayName": "Text",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
     "searchTags": [
@@ -28,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Welcome {{continue_api.data.name}}",
+    "text": "Welcome {{appsmith.store.user.name}}/",
     "key": "tpxf0nfm51",
     "isDeprecated": false,
     "rightColumn": 63,
@@ -36,7 +37,7 @@
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "uepbc8nilt",
     "minWidth": 450,
-    "isVisible": true,
+    "isVisible": "true",
     "fontStyle": "BOLD",
     "textColor": "#231F20",
     "version": 1,

@@ -30,5 +30,5 @@
     "originalTopRow": 30,
     "borderRadius": "0px",
     "originalBottomRow": 45,
-    "progress": "{{Math.abs(Table1.selectedRow.progress)}}"
+    "progress": "{{\nMath.abs(CircularProgress1\n  .progress)\n}}"
 }

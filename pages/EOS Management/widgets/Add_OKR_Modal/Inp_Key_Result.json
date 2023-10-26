@@ -9,7 +9,8 @@
     "leftColumn": 1,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "defaultText"}
     ],
     "labelStyle": "",
     "inputType": "TEXT",
@@ -56,6 +57,6 @@
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "",
+    "defaultText": "{{\n(fetchObjective.data.find(\n  obj => obj.id ===\n  'specificId') || {})\n.name || ''\n}}",
     "minDynamicHeight": 4
 }

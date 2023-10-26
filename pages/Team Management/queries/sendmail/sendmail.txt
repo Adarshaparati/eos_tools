@@ -1,0 +1,73 @@
+
+<br>
+Hi ,
+<html>
+<head>
+<title>Invitation to a PARATI</title>
+<style>
+/* Set the email font family and size */
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	background-color: #002b41ff;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Style the email header */
+h1 {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+/* Style the email body text */
+p {
+	margin-bottom: 10px;
+}
+
+/* Style the email buttons */
+.button {
+	background-color: #eab308;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border-color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+footer {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<h1 style="color: white; font-weight: 100;">Welcome to {{appsmith.store.company}} &nbsp;<br><br>{{OKR_ListCopy.triggeredItem.emp_name}}</h1>&nbsp;  
+<p>
+You are cordially invited to our software,PARATI.
+</p>
+Using this application you can track and monitor your KPI and work item.
+<p>
+Please Join within 5 days using this link.
+</p>
+
+<p>
+<a href="https://app.appsmith.com/app/eos-goals/login-64c7946a1e45e00875a4804e?embed=true" class="button" onclick="window.location.replace('https://app.appsmith.com/app/eos-goals/login-64c7946a1e45e00875a4804e?embed=true')">JOIN</a>
+</p>
+
+
+<p>
+We hope to see you there!
+</p>
+
+<footer>
+Best,wishes
+<br>
+<p style="color: red;">Parati</p>
+</footer>
+</body>
+</html>

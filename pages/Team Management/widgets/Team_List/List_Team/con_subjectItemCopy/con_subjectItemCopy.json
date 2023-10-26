@@ -5,6 +5,7 @@
     "borderColor": "transparent",
     "disallowCopy": true,
     "isCanvas": true,
+    "dynamicPropertyPathList": [{"key": "backgroundColor"}],
     "displayName": "Container",
     "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
     "searchTags": [
@@ -25,7 +26,8 @@
     "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
-        {"key": "boxShadow"}
+        {"key": "boxShadow"},
+        {"key": "backgroundColor"}
     ],
     "children": [{
         "widgetName": "Canvas4Copy",
@@ -60,7 +62,7 @@
     "positioning": "fixed",
     "flexVerticalAlignment": "start",
     "key": "050ml21w4k",
-    "backgroundColor": "#002b41ff",
+    "backgroundColor": "{{\nList_Team.selectedItem\n  .team_name === appsmith\n  .store.activeButton ?\n  'red' :\n  'black'\n}}",
     "isDeprecated": false,
     "rightColumn": 64,
     "dynamicHeight": "FIXED",

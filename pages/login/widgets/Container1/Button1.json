@@ -3,9 +3,9 @@
     "boxShadow": "none",
     "mobileBottomRow": 9,
     "widgetName": "Button1",
-    "onClick": "{{init_api.run().then(() => {\n  navigateTo(init_api.data.authUrl, {}, 'NEW_WINDOW');\n});}}",
+    "onClick": "{{init_api.run().then(() => {\n  navigateTo(init_api.data.authUrl, {}, 'SAME_WINDOW');\n});}}",
     "buttonColor": "#3b82f6",
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "onClick"}],
     "displayName": "Button",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
     "searchTags": [

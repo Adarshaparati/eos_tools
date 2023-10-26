@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "version": 86,
           "minHeight": 460,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -50,16 +50,6 @@
             }
           ],
           [
-            {
-              "id": "welcome_continue_api",
-              "name": "continue_api",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.URL.queryParams.code"
-              ],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "welcome_fetchcompany",
               "name": "fetchcompany",

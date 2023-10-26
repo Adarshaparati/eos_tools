@@ -75,7 +75,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1691572781968,
+    "columnUpdatedAt": 1695990350763,
     "originalBottomRow": 67,
     "defaultSelectedRowIndices": [0],
     "mobileBottomRow": 60,
@@ -622,6 +622,7 @@
     "rightColumn": 46,
     "textSize": "0.875rem",
     "widgetId": "t8xe7e56gv",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{utils.filter_KPI_Moniter(show_KPI_Monitor.data)}}",
     "label": "Data",

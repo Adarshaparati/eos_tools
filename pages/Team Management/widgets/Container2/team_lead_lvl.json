@@ -6,13 +6,14 @@
     "labelWidth": 5,
     "type": "SELECT_WIDGET",
     "serverSideFiltering": true,
-    "defaultOptionValue": "Level 6",
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \nappsmith.store.value1 || {\n    \"label\": \"label1\",\n    \"value\": \"value1\"\n))(team_lead_lvl.options, team_lead_lvl.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 28,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "sourceData"}
+        {"key": "sourceData"},
+        {"key": "defaultOptionValue"}
     ],
     "placeholderText": "Select option",
     "isDisabled": false,

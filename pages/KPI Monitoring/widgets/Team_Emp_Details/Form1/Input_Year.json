@@ -12,7 +12,8 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "defaultOptionValue"}
+        {"key": "defaultOptionValue"},
+        {"key": "sourceData"}
     ],
     "labelStyle": "BOLD",
     "placeholderText": "Select option",
@@ -38,7 +39,7 @@
     "dynamicTriggerPathList": [],
     "labelPosition": "Top",
     "labelTextColor": "#231f20",
-    "sourceData": "[\n  {\n    \"label\": \"2021\",\n    \"value\": \"2021\"\n  },\n  {\n    \"label\": \"2022\",\n    \"value\": \"2022\"\n  },\n  {\n    \"label\": \"2023\",\n    \"value\": \"2023\"\n  },\n\t {\n    \"label\": \"2024\",\n    \"value\": \"2024\"\n  },\n\t {\n    \"label\": \"2025\",\n    \"value\": \"2025\"\n  }\n]",
+    "sourceData": "{{\nfetchTeam.data.filter(\n  team => team.team_id ===\n  Get_Team_By_TeamValue\n  .data[0].team)\n}}",
     "key": "7qv50bt15w",
     "labelTextSize": "1rem",
     "isDeprecated": false,

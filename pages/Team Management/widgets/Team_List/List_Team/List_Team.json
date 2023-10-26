@@ -91,7 +91,7 @@
     "rightColumn": 60,
     "widgetId": "cb4y5gnx4l",
     "minWidth": 450,
-    "onItemClick": "{{get_Employee_By_Team.run()}}",
+    "onItemClick": "{{get_Employee_By_Team.run();\ncolour.setCurrentButton();}}",
     "parentId": "niimgb0xvz",
     "renderMode": "CANVAS",
     "mobileTopRow": 2,

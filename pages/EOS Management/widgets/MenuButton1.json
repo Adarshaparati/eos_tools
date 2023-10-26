@@ -79,7 +79,7 @@
         }
     },
     "isVisible": true,
-    "label": "",
+    "label": "/",
     "version": 1,
     "parentId": "0",
     "renderMode": "CANVAS",

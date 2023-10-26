@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 650,
+          "bottomRow": 950,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "version": 87,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -45,6 +45,16 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "appsmith.store.user.email"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "EOS Management_get_team_by_team_id",
+              "name": "get_team_by_team_id",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "this.params.name"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -109,18 +119,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Inp_Key_Res.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "EOS Management_Get_Emp_By_TeamValue_2",
-              "name": "Get_Emp_By_TeamValue_2",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "fetchTeam.data.find(team => team.team_name === Table1.triggeredRow.team_id)?.team_id"
               ],
               "timeoutInMillisecond": 10000
             }
